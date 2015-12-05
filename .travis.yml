@@ -29,8 +29,6 @@ install:
   - composer install
 
 before_script:
-  # install apache
-  - a2enmod rewrite actions fastcgi alias
   # customize php settings
   - chmod 0755 build/travis/setup-fpm.sh build/travis/setup-hhvm.sh
   - if [[ "$TRAVIS_PHP_VERSION" != *"hhvm"* ]]; then build/travis/setup-fpm.sh; fi
