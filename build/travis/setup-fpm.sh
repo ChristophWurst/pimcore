@@ -10,4 +10,4 @@ echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php
 ~/.phpenv/versions/$(phpenv version-name)/sbin/php-fpm
 
 #sudo cp -f build/travis/apache-fpm.conf /etc/apache2/sites-available/default
-cp -f build/travis/apache-fpm.conf build/travis-ci-apache
+cp -f build/travis/apache-fpm.conf /etc/apache2/sites-available/default
